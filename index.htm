@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+    /* General Styling */
+body {
+    background-color: #020f53;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Heading Styles */
+h1, h2 {
+    text-align: center;
+    margin-top: 130px;
+    font-size: 90px;
+}
+
+p{
+    text-align: center;
+    font-size: 10px;
+}
+
+h3{
+    text-align: left;
+    font-size: 16px;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: right;
+    margin: 13px;
+    padding: 20px;
+}
+
+/* Button Styles */
+button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #bc6f04;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kelompok 4 </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button onclick="showMembers()">Lihat Anggota Kelompok</button>
+    </div>
+
+    <div class="container" id="members-container" style="display: none;">
+        <h1>Anggota Kelompok</h1>
+            <h3>Adam Hanafi Putra  20220140129</h3>
+            <h3>Ersa Aditya Rohman 20220140160</h3>
+            <h3>Sal Sabila         20220140189</h3>
+            <h3>Rara Eva Maharani  20210140147</h3>
+        <button onclick="showWelcome()">Kembali</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
